@@ -231,3 +231,27 @@ input[type="email"]{
     border-radius: 5px;
     background-color: #FFFFFF;
 }
+
+/* responsive media query */
+.hide{
+    display: none;
+}
+/* Make responsive */
+@media screen and (max-width: 576px) {
+    .skill-container ,
+    .resume-container,
+    footer,
+    .about-items{
+        flex-direction: column;
+    }
+    footer , .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: auto;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    
+}
